@@ -8,19 +8,15 @@
 Publisher
 
 <script>
-	(function() {
+	(function(){
 		var script = document.createElement('script');
 		script.async = true;
 		script.src = 'http://sdk.medkumo.loc:85/medkumo.js';
 		var entry = document.getElementsByTagName('script')[0];
 		entry.parentNode.insertBefore(script, entry);
 	})();
-	window.Medkumo_ready=function()
-	{
-		Medkumo.init(function() {
-		 console.log("Init");
-		 Medkumo.showWidget();	 
-		});
+	window.Medkumo_ready=function(){
+		Medkumo.init('key');
 	};	
 </script>
 
